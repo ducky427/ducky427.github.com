@@ -13,7 +13,7 @@ links:
   - name:         GitHub
     url:          http://github.com/ducky427
     external:     true
-  - name:           Blog
+  - name:         Blog
     url:          http://ducky427.github.io
     external:     true
 pygments:         true
