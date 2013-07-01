@@ -30,7 +30,7 @@ tar xf python-glpk_0.4.43.orig.tar.gz
 cd python-glpk-0.4.43/src/
 {% endhighlight %}
 
-In swig/Makefile replace line number to 1
+In swig/Makefile replace line number to
 {% highlight bash%}
 PYVERS := 'python2.7'
 {% endhighlight %}
