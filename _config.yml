@@ -1,22 +1,20 @@
-title:            Scribble
-description:      A jekyll theme. Because I scribble.
+title:            Ducky
+description:      Blog.
 url:              # Site url.
-signoff:          # Your name.
-disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+signoff:          Ducky
+disqus_shortname: duckyblog
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
-google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
+google_analytics: UA-42115942-1
 
 links:
-  - name:         About
-    url:          /about
-  - name:         Blog
-    url:          http://muan.co
-    external:     true
-  - name:         Email
-    url:          mailto:hello@muan.co
+  - name:         Twitter
+    url:          http://twitter.com/ducky427
     external:     true
   - name:         GitHub
-    url:          http://github.com/muan
+    url:          http://github.com/ducky427
+    external:     true
+  - name:           Blog
+    url:          http://ducky427.github.io
     external:     true
 pygments:         true
 permalink:        pretty
