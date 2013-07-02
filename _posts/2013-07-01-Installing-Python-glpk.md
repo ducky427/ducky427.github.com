@@ -9,10 +9,11 @@ I have been using [PuLP](https://code.google.com/p/pulp-or/) for linear optimisa
 
 So I decided to install GLPK on my computer. This proved harded than I initially imagined.
 
-Installing GLPK assuming [Homebrew](http://brew.sh/) is installed:
+Installing GLPK [Homebrew](http://brew.sh/) and swig:
 
 {% highlight bash %}
 brew install homebrew/science/glpk
+brew install swig
 {% endhighlight %}
 
 Now to install python bindings for GLPK. I tried out two binding for python (more details [here](http://en.wikibooks.org/wiki/GLPK/Python)):
