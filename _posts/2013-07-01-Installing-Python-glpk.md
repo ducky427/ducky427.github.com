@@ -24,13 +24,21 @@ I didn't have any success with PyGLPK. So I stuck with Python-GLPK.
 
 My instructions:
 
+Firstly install 'ply'
+
+{% highlight bash %}
+pip install ply
+{% endhighlight %}
+
+Then download the code and unzip it.
+
 {% highlight bash %}
 wget http://www.dcc.fc.up.pt/~jpp/code/python-glpk/python-glpk_0.4.43.orig.tar.gz
 tar xf python-glpk_0.4.43.orig.tar.gz
 cd python-glpk-0.4.43/src/
 {% endhighlight %}
 
-In swig/Makefile replace line number to
+In swig/Makefile replace line number 1 to
 {% highlight bash%}
 PYVERS := 'python2.7'
 {% endhighlight %}
@@ -40,7 +48,19 @@ In folder 'src', run
 make
 {% endhighlight %}
 
-Ignore any errors. Now run:
+I got these errors and I ignored them.
+
+{% highlight bash%}
+make -C swig all
+swig -python  glpkpi.i
+./glpk.h:916: Warning 314: 'in' is a python keyword, renaming to '_in'
+sed -i 's/:in /:_in /g' glpkpi.py
+sed: 1: "glpkpi.py": extra characters at the end of g command
+make[1]: *** [glpkpi.py] Error 1
+make: *** [all] Error 2
+{% endhighlight %}
+
+Now run:
 
 {% highlight bash%}
 cp swig/glpkpi.py python/glpkpi.py
