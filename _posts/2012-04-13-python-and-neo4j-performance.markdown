@@ -20,9 +20,9 @@ if __name__ == "__main__":
     header = reader.next()
 
     with db.transaction:
-	for row in reader:
-	    # do something with row
-	    node = db.node(**dict(zip(header, row)))
+        for row in reader:
+            # do something with row
+            node = db.node(**dict(zip(header, row)))
 
     print "Closing....."
     db.shutdown()
@@ -50,14 +50,14 @@ if __name__ == "__main__":
     tx = db.beginTx()
 
     try:
-	for row in reader:
-	    # do something with row.
-	    node = db.createNode()
-	    for k, v in zip(header, row):
-		node.setProperty(k, v)
-	tx.success()
+        for row in reader:
+            # do something with row.
+            node = db.createNode()
+            for k, v in zip(header, row):
+                node.setProperty(k, v)
+        tx.success()
     except:
-	tx.failure()
+        tx.failure()
 
     tx.finish()
 
