@@ -6,9 +6,9 @@ A jekyll theme. [Want a demo? click and read instruction. :point_left:](http://s
 
 ![screenshot](http://scribble.muan.co/images/screenshot.png)
 
-There is no clever design philosophy to talk about, I tried to find something to work with, and 'scribble' came to my mind. 
+There is no clever design philosophy to talk about, I tried to find something to work with, and 'scribble' came to my mind.
 
-This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS & CoffeeScript, though .scss & .coffee files wouldn't be included in the theme. 
+This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS & CoffeeScript, though .scss & .coffee files wouldn't be included in the theme.
 
 The theme is mobile optimised but I did not check browser compatibility. It looks great in Chrome, Safari and Firefox though.
 
@@ -47,6 +47,12 @@ When writing a post, there are 3 options you can add to the header.
 
 3. **date**: 2013-05-06 18:07:17<br />
   Date is not a required header since Jekyll reads the file name for date, this was added in only for the **signoff time**. (as shown at the end of this post) If you don't want the signoff time, go into `/includes/signoff.html` remove the `<span>`, and remove `{% include signoff.html %}` from `/layouts/post.html`.
+
+---
+
+### Updating
+http://stackoverflow.com/questions/3903817/pull-new-updates-from-original-github-repository-into-forked-github-repository
+http://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches
 
 ---
 
