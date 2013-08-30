@@ -14,7 +14,7 @@ links:
     url:          http://github.com/ducky427
     external:     true
   - name:         Blog
-    url:          http://ducky427.github.io
+    url:          http://blog.ducky.io
     external:     true
 pygments:         true
 permalink:        pretty
