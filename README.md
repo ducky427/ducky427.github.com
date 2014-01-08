@@ -2,7 +2,8 @@ Scribble
 ========
 
 A jekyll theme. [Want a demo? click and read instruction. :point_left:](http://scribble.muan.co/2013/05/06/scribble-the-jekyll-theme/)
-<br />(I am currently working on a collection of themes, here's [a preview for one of them](http://themes.muan.co/personal/2013/05/19/sore-throat/). You know how to [stay](https://twitter.com/muanchiou) [posted](https://github.com/muan). :flushed: )
+<br />
+[More themes](https://github.com/muan/muan.github.com/releases).
 
 ![screenshot](http://scribble.muan.co/images/screenshot.png)
 
@@ -32,6 +33,12 @@ The theme is mobile optimised but I did not check browser compatibility. It look
 1. I have extract most user specific information to `_config.yml`, you should be able to set up almost everything from it.
 2. Change about.md for blog intro.
 3. For domain settings, see [the guide from GitHub](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
+
+---
+
+### GitHub Pages stuff
+
+The `gh-pages` branch of this repository is [the project page](http://scribble.muan.co), which **should not** be used as your blog, so use `master` branch for your blog. This is assuming your blog repository will be called [your-username].github.io, if tis is not the case, you will need to delete the `gh-pages` repository and create a branch off the `master` branch. Hope that's clear.
 
 ---
 
