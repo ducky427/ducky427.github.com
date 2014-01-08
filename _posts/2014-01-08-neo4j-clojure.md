@@ -11,7 +11,7 @@ I have been programming in [Clojure](http://www.clojure.org) for a little while 
 
 I modified that code to get what I needed. I hit across two issues: 
 
-* A nasty deftype namespace not loading [bug](http://dev.clojure.org/jira/browse/CLJ-1208). It seems to be an old one. But found a work around on [Stack Overflow](https://stackoverflow.com/questions/10953621/clojure-deftype-calling-function-in-the-same-namespace-throws-java-lang-illegal/).
+* A nasty ``deftype`` namespace not loading [bug](http://dev.clojure.org/jira/browse/CLJ-1208) in Clojure. It seems to be an old one. But found a work around on [Stack Overflow](https://stackoverflow.com/questions/10953621/clojure-deftype-calling-function-in-the-same-namespace-throws-java-lang-illegal/).
 
 * [Neo4j 2.0 documentation](http://api.neo4j.org/2.0.0/org/neo4j/graphdb/GraphDatabaseService.html) stated that a transaction is required only when the graph is being written to. Nope. I've highlighted it to them and as ever they've quickly fixed [it](https://github.com/neo4j/neo4j/pull/1801). I was trying to get a node by its ID and I was getting a ``NotInTransactionException``. Anyway its not needed for this exercise.
 
