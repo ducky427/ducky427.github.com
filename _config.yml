@@ -16,7 +16,7 @@ links:
   - name:         Blog
     url:          http://blog.ducky.io
     external:     true
-pygments:         true
+highlighter:      pygments
 permalink:        pretty
 markdown:         redcarpet
 redcarpet:
