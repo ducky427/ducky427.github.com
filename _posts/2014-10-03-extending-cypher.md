@@ -95,7 +95,7 @@ So the date is parsed to a long by `str-to-date` function and a long is converte
 
 Obviously now to add more functions to cypher is really easy. All I need to do is add another `defmethod` in my Clojure code.
 
-The changes I had to make to Cypher in Neo4j codebase are [here](https://github.com/ducky427/neo4j/commit/359294e8711550cf47cd553e09cb638a637cca3c). The meat of the change is the `compute` method of `SpecialFunc` class:
+The changes I had to make to Cypher in Neo4j codebase are [here](https://github.com/ducky427/neo4j/commit/359294e8711550cf47cd553e09cb638a637cca3c). The meat of the change is in the `compute` method of `SpecialFunc` class:
 
 ```scala
 package org.neo4j.cypher.internal.compiler.v2_1.commands.expressions
