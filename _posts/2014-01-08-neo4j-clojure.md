@@ -3,13 +3,13 @@ layout: post
 title: "Neo4j unmanaged extension in Clojure"
 date: 2014-01-08 18:30
 disqus: y
-categories: neo4j, clojure
+categories: neo4j clojure
 ---
 I needed to create an [Unmanaged Extension](http://docs.neo4j.org/chunked/milestone/server-unmanaged-extensions.html) in Neo4j but the prospect of using Java gave me shudders.
 
-I have been programming in [Clojure](http://www.clojure.org) for a little while now. Given that Clojure is a JVM language, I decided to try to write the extension in that. Neo4j uses the [JAX-RS](https://en.wikipedia.org/wiki/Java_API_for_RESTful_Web_Services) API for supporting user supplied code. Luckily O'Reilly's excellent book on Clojure, [Clojure Programming](http://www.clojurebook.com/) had an example of a [JAX-RS class](https://github.com/clojurebook/ClojureProgramming/blob/master/ch09-annotations/src/main/clojure/com/clojurebook/annotations/jaxrs.clj). *I love it when a plan comes together*. 
+I have been programming in [Clojure](http://www.clojure.org) for a little while now. Given that Clojure is a JVM language, I decided to try to write the extension in that. Neo4j uses the [JAX-RS](https://en.wikipedia.org/wiki/Java_API_for_RESTful_Web_Services) API for supporting user supplied code. Luckily O'Reilly's excellent book on Clojure, [Clojure Programming](http://www.clojurebook.com/) had an example of a [JAX-RS class](https://github.com/clojurebook/ClojureProgramming/blob/master/ch09-annotations/src/main/clojure/com/clojurebook/annotations/jaxrs.clj). *I love it when a plan comes together*.
 
-I modified that code to get what I needed. I hit across two issues: 
+I modified that code to get what I needed. I hit across two issues:
 
 * A nasty ``deftype`` namespace not loading [bug](http://dev.clojure.org/jira/browse/CLJ-1208) in Clojure. It seems to be an old one. But found a work around on [Stack Overflow](https://stackoverflow.com/questions/10953621/clojure-deftype-calling-function-in-the-same-namespace-throws-java-lang-illegal/).
 
