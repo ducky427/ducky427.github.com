@@ -52,7 +52,8 @@ This is my Clojure code which added two date functions to cypher: `str-to-date`,
 
 (defn call
   [args]
-  (func (keyword (first args)) (rest args)))
+  (func (keyword (first args))
+        (rest args)))
 ```
 
 The code for `cypher-ext` is also on [github](https://github.com/ducky427/cypher-ext).
