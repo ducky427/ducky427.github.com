@@ -33,7 +33,7 @@ This is my Clojure code which added two date functions to cypher: `str-to-date`,
             [clj-time.coerce :as tc]))
 
 
-(defmulti func (fn [x args] x))
+(defmulti func (fn [n args] n))
 
 (defmethod func :str-to-date
   [_ [x fmt]]
